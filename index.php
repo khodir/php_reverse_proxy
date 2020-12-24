@@ -7,14 +7,14 @@ use
     Sabre\HTTP\Client;
 
 // The url we're proxying to.
-$remoteUrl = 'http://example.org/';
+$remoteUrl = 'http://localhost:3000/';
 
 // The url we're proxying from. Please note that this must be a relative url,
 // and basically acts as the base url.
 //
 // If youre $remoteUrl doesn't end with a slash, this one probably shouldn't
 // either.
-$myBaseUrl = '/reverseproxy.php';
+$myBaseUrl = '/';
 // $myBaseUrl = '/~evert/sabre/http/examples/reverseproxy.php/';
 
 $request = Sapi::getRequest();
